@@ -6,11 +6,14 @@ interface CardProps {
   className?: string;
 }
 
-export default function Card({ children, className }: CardProps) {
+export default function Card({
+  children,
+  className,
+}: CardProps) {
   return (
     <div
       className={cn(
-        "rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-lg",
+        "rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-colors duration-200 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900",
         className
       )}
     >
