@@ -28,9 +28,9 @@ export default function Header() {
             onClick={closeMenu}
             className="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
-            Lorence Clint{" "}
-            <span className="text-blue-600 dark:text-blue-400">
-              Andes
+            {" "}
+            <span className="text-gray-900 dark:text-white">
+              LC.
             </span>
           </Link>
 
