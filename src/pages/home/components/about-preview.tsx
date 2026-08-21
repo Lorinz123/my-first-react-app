@@ -41,7 +41,7 @@ export default function AboutPreview() {
 
               <div>
                 <p className="text-3xl font-bold text-gray-900 dark:text-white">
-                  3+
+                  3
                 </p>
 
                 <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
@@ -51,7 +51,7 @@ export default function AboutPreview() {
 
               <div>
                 <p className="text-3xl font-bold text-gray-900 dark:text-white">
-                  5+
+                  5
                 </p>
 
                 <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
