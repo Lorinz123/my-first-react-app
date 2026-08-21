@@ -47,7 +47,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white dark:bg-gray-950 p-6 shadow-sm sm:p-8">
+    <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900 sm:p-8">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
           Send me a message
@@ -61,7 +61,7 @@ export default function ContactForm() {
       {submitted && (
         <div
           role="alert"
-          className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4 text-sm font-medium text-green-700"
+          className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4 text-sm font-medium text-green-700 dark:border-green-800 dark:bg-green-950 dark:text-green-400"
         >
           Your message has been submitted successfully.
         </div>
@@ -85,7 +85,7 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="Your name"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-500 dark:focus:ring-blue-900"
           />
         </div>
 
@@ -106,7 +106,7 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="you@example.com"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-500 dark:focus:ring-blue-900"
           />
         </div>
 
@@ -127,7 +127,7 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="What would you like to talk about?"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-500 dark:focus:ring-blue-900"
           />
         </div>
 
@@ -148,14 +148,14 @@ export default function ContactForm() {
             placeholder="Write your message..."
             rows={6}
             required
-            className="w-full resize-none rounded-lg border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            className="w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-500 dark:focus:ring-blue-900"
           />
         </div>
 
         {/* Submit */}
         <button
           type="submit"
-          className="w-full rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          className="w-full rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
         >
           Send Message
         </button>

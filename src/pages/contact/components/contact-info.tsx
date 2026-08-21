@@ -24,7 +24,7 @@ export default function ContactInfo() {
         Let's connect.
       </h2>
 
-      <p className="mt-5 leading-7 text-gray-600text-gray-600 dark:text-gray-400">
+      <p className="mt-5 leading-7 text-gray-600 dark:text-gray-400">
         I'm always open to discussing projects, learning
         opportunities, collaborations, or anything related to
         software development.
@@ -34,9 +34,9 @@ export default function ContactInfo() {
         {contactDetails.map((contact) => (
           <div
             key={contact.label}
-            className="rounded-xl border border-gray-200 bg-white dark:bg-gray-950 p-5 shadow-sm"
+            className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-800 dark:bg-gray-900"
           >
-            <p className="text-sm font-medium text-gray-500">
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
               {contact.label}
             </p>
 
@@ -48,7 +48,7 @@ export default function ContactInfo() {
                   ? "noopener noreferrer"
                   : undefined
               }
-              className="mt-1 block font-semibold text-gray-900 dark:text-white transition hover:text-blue-600"
+              className="mt-1 block font-semibold text-gray-900 transition hover:text-blue-600 dark:text-white"
             >
               {contact.value}
             </a>
